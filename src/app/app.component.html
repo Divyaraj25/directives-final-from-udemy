@@ -12,6 +12,14 @@
           <li class="list-group-item" *ngFor="let even of evenNumber" [ngClass]="{odd: even % 2 !== 0}"
             [ngStyle]="{backgroundColor: even % 2 === 0 ? 'yellow' : 'transparent'}">{{even}}</li>
         </div>
+
+        <!-- the star of ngif is converted into this, because star is not in angular directives. -->
+        <!-- <ng-template [ngIf]="!onlyOdd">
+          <div>
+            <li class="list-group-item" *ngFor="let even of evenNumber" [ngClass]="{odd: even % 2 !== 0}"
+              [ngStyle]="{backgroundColor: even % 2 === 0 ? 'yellow' : 'transparent'}">{{even}}</li>
+          </div>
+        </ng-template> -->
       </ul>
       <p appBasicHighlight>Please decorate me with basicHighlightDirective. Thank you!</p>
       <p appBetterHighlight [defaultColor]="'aqua'" highlightColor="red">Please decorate me with
