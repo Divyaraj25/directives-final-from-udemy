@@ -5,11 +5,12 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   // numbers = [1, 2, 3, 4, 5];
   oddNumber = [1, 3, 5];
   evenNumber = [2, 4];
   onlyOdd = false;
+  value = 10;
 
-  ngOnInit() {}
+  ngOnInit() { }
 }

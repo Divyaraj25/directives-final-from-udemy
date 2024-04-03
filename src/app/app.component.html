@@ -28,6 +28,11 @@
       <p appBasicHighlight>Please decorate me with basicHighlightDirective. Thank you!</p>
       <p appBetterHighlight [defaultColor]="'aqua'" highlightColor="red">Please decorate me with
         appBetterHighlightDirective. Thank you!</p>
+        <div [ngSwitch]="value">
+          <div *ngSwitchCase="5">value is 5</div>
+          <div *ngSwitchCase="10">value is 10</div>
+          <div *ngSwitchDefault>value is not 5 not 10</div>
+        </div>
     </div>
   </div>
 </div>
