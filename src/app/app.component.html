@@ -5,12 +5,15 @@
       <br><br>
       <ul class="list-group">
         <div *ngIf="onlyOdd">
-          <li class="list-group-item" *ngFor="let odd of oddNumber" [ngClass]="{odd: odd % 2 !== 0}" [ngStyle]="{backgroundColor: odd % 2 === 0 ? 'yellow' : 'transparent'}">{{odd}}</li>
+          <li class="list-group-item" *ngFor="let odd of oddNumber" [ngClass]="{odd: odd % 2 !== 0}"
+            [ngStyle]="{backgroundColor: odd % 2 === 0 ? 'yellow' : 'transparent'}">{{odd}}</li>
         </div>
         <div *ngIf="!onlyOdd">
-          <li class="list-group-item" *ngFor="let even of evenNumber" [ngClass]="{odd: even % 2 !== 0}" [ngStyle]="{backgroundColor: even % 2 === 0 ? 'yellow' : 'transparent'}">{{even}}</li>
+          <li class="list-group-item" *ngFor="let even of evenNumber" [ngClass]="{odd: even % 2 !== 0}"
+            [ngStyle]="{backgroundColor: even % 2 === 0 ? 'yellow' : 'transparent'}">{{even}}</li>
         </div>
       </ul>
+      <p appBasicHighlight>Please decorate me with basicHighlightDirective. Thank you!</p>
     </div>
   </div>
 </div>
